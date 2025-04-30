@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
 ENTITY testbench_Multiplexer IS
-END testbech_Multiplexer;
+END testbench_Multiplexer;
 
 ARCHITECTURE testbench_Multiplexer_Behavior OF testbench_Multiplexer IS
 
