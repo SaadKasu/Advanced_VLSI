@@ -34,7 +34,7 @@ BEGIN
             
             wait for 100 ns;
 
-            D <= '0'
+            D <= '0';
             clk <= '0';
 
             wait for 100ns;

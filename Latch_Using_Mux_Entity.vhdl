@@ -18,6 +18,6 @@ ARCHITECTURE latch_Behavior of latch is
              );
     END COMPONENT;
 
-    BEGIN
-        multiplexer port map (Q,D,clk,Q);
+BEGIN
+      latch :  multiplexer port map (Q,D,clk,Q);
 END latch_Behavior;
