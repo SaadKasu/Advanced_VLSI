@@ -11,14 +11,6 @@ ARCHITECTURE latch_Behavior of latch is
 
     COMPONENT multiplexer 
         PORT (
-                D : IN std_logic;
-                clk : IN std_logic;
-                Q : InOUT std_logic
-             );
-    END COMPONENT; 
-
-    COMPONENT multiplexer 
-        PORT (
                 S : IN std_logic;
                 R : IN std_logic;
                 T : IN std_logic;

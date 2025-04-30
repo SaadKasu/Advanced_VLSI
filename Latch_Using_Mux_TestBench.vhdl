@@ -22,7 +22,7 @@ ARCHITECTURE testbench_Latch_Behavior OF testbench_latch IS
 BEGIN
     
     -- Instantiate Unit Under Test (UUT)
-    uut : multiplexer PORT MAP (
+    uut : latch PORT MAP (
         clk => clk,
         D => D,
         Q => Q
@@ -35,20 +35,20 @@ BEGIN
             wait for 100 ns;
 
             D <= '0'
-            ch <= '0';
+            clk <= '0';
 
             wait for 100ns;
 
-            ch <= '1';
+            clk <= '1';
 
             wait for 100ns;
 
-            ch<='0';
+            clk<='0';
         
             wait for 100ns;
 
-            D <= '1'
-            ch <= '0';
+            D <= '1';
+            clk <= '0';
 
         end process;
 
