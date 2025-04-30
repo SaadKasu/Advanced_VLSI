@@ -11,7 +11,7 @@ ARCHITECTURE testbench_Multiplexer_Behavior OF testbench_Multiplexer IS
                 dIN1 : IN std_logic;
                 dIN2 : IN std_logic;
                 ch   : IN std_logic;
-                output  ; OUT std_logic
+                dOUT : OUT std_logic
              );
         END COMPONENT;
 
@@ -19,7 +19,7 @@ ARCHITECTURE testbench_Multiplexer_Behavior OF testbench_Multiplexer IS
     signal dIN2 : std_logic := '0';
     signal ch   : std_logic := '0';
 
-    signal output : std_logic;
+    signal dOUT : std_logic;
 
     --Stimulus process
     stim_proc : process
