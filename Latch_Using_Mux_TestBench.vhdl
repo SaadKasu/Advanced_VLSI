@@ -58,7 +58,7 @@ BEGIN
 
             clk<='0';
 
-            wait for 100ns
+            wait for 100ns;
 
             clk<='1';
 
