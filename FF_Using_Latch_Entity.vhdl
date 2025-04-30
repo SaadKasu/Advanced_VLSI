@@ -21,4 +21,4 @@ ARCHITECTURE flip_Behavior of flipflop is
 BEGIN
       firstFlipFlop :  latch port map (D,clk,temp1);
       secondFlipFlop : latch port map (temp1,clk,Q);
-END latch_Behavior;
+END flip_Behavior;
