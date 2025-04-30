@@ -50,6 +50,18 @@ BEGIN
             D <= '1';
             clk <= '0';
 
+            wait for 100ns;
+
+            clk<='1';
+
+            wait for 100ns;
+
+            clk<='0';
+
+            wait for 100ns
+
+            clk<='1';
+
         end process;
 
 END;
