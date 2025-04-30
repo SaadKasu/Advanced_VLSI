@@ -14,12 +14,22 @@ ARCHITECTURE testbench_Multiplexer_Behavior OF testbench_Multiplexer IS
                 dOUT : OUT std_logic
              );
         END COMPONENT;
-
+    --Inputs
     signal dIN1 : std_logic := '0';
     signal dIN2 : std_logic := '0';
     signal ch   : std_logic := '0';
-
+    --Output
     signal dOUT : std_logic;
+
+BEGIN
+    
+    -- Instantiate Unit Under Test (UUT)
+    uut : multiplexer PORT MAP (
+        dIN1 => dIN1,
+        dIN2 => dIN2,
+        ch => ch,
+        dOUT => dOUT
+    );
 
     --Stimulus process
     stim_proc : process
