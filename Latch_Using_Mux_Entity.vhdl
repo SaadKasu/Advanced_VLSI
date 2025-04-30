@@ -11,10 +11,10 @@ ARCHITECTURE latch_Behavior of latch is
 
     COMPONENT multiplexer 
         PORT (
-                S : IN std_logic;
-                R : IN std_logic;
-                T : IN std_logic;
-                muxOut : OUT std_logic
+                dIN1 : IN std_logic;
+                dIN2 : IN std_logic;
+                ch : IN std_logic;
+                dOUT : OUT std_logic
              );
     END COMPONENT;
 
